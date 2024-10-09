@@ -26,7 +26,7 @@ jobs:
       #  run: dotnet workload update
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build -p D:\a\AzureOpnieuw\AzureOpnieuw\dotnetcoresample.csproj --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.GITHUB_WORKSPACE}}\myapp
