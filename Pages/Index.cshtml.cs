@@ -3,14 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
 
-namespace dotnetcoresample.Pages;
+namespace AzureOpnieuw.Pages;
 
 public class IndexModel : PageModel
 {
 
     public string OSVersion { get { return RuntimeInformation.OSDescription; }  }
-
-    public string IP {get {return IP;}}
     
     private readonly ILogger<IndexModel> _logger;
 
