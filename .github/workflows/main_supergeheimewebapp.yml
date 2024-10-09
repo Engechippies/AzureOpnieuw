@@ -21,8 +21,9 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Workload Update
-        run: dotnet workload update
+      #run als problemen gedetect worden met de workload
+      #- name: Workload Update
+      #  run: dotnet workload update
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
