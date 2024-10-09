@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
 
@@ -8,6 +9,8 @@ public class IndexModel : PageModel
 {
 
     public string OSVersion { get { return RuntimeInformation.OSDescription; }  }
+
+    public string IP {get {return IP;}}
     
     private readonly ILogger<IndexModel> _logger;
 
