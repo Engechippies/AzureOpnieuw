@@ -7,7 +7,7 @@ namespace dotnetcoresample.Pages;
 public class IetsModel : PageModel
 {
     Random random = new Random();
-    string path = "Data\\";
+    string path = "D:\\a\\AzureOpnieuw\\AzureOpnieuw\\Data\\";
 
     public string GiveQuote(){
         string[] Quotes = System.IO.File.ReadAllLines(path + "superemotioneel.txt");
