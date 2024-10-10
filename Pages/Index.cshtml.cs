@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Runtime.InteropServices;
 
-namespace AzureOpnieuw.Pages;
+namespace dotnetcoresample.Pages;
 
 public class IndexModel : PageModel
 {
