@@ -1,23 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Runtime.InteropServices;
 using System.IO;
 
 namespace dotnetcoresample.Pages;
 
-public class PageUnknownModel : PageModel
+public class IetsModel : PageModel
 {
     Random random = new Random();
-    string path = "../../AzureOpnieuw/Data/";
+    string path = "Data\\";
 
     public string GiveQuote(){
         string[] Quotes = System.IO.File.ReadAllLines(path + "superemotioneel.txt");
-        return Quotes[random.Next(0, 99)];
+        return Quotes[random.Next(0,99)];
     }
     
-    private readonly ILogger<PageUnknownModel> _logger;
+    private readonly ILogger<IetsModel> _logger;
 
-    public PageUnknownModel(ILogger<PageUnknownModel> logger)
+    public IetsModel(ILogger<IetsModel> logger)
     {
         _logger = logger;
     }

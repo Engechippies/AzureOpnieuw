@@ -1,11 +1,11 @@
 @page
-@model PageUnknownModel
+@model IetsModel
 @{    
     ViewData["Title"] = "???";
 }
 
 <div class="text-center">
     <h1 class="display-4">A page dedicated to random shit</h1>
-    <p>Quote of the day: @Model.GiveQuote</p>
+    <p>Quote of the day: @Model.GiveQuote()</p>
     
 </div>
